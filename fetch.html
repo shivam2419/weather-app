@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fetch.css" />
+    <title>Weather App</title>
+    <script src="fetch.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+          <marquee  direction="right"><li>YourWeather <img src="sun.jpg" alt=""></li></marquee>
+        </ul>
+      </nav>
+      <div class="data">
+        <div class="f1">
+          <h1>CHECK WEATHER :)</h1>
+          <input type="text" id="inp1" placeholder="Enter city name " />
+          <br /><br />
+          <button onclick="func()">Submit</button>
+          <h2>Weather: <span id="desc"></span></h2>
+          <h2>Temprature : <span id="temp"></span></h2>
+          <h2>Wind speed: <span id="ws"></span></h2>
+
+          <h2 class="nxt">Next Three days forecast : </h2>
+          <div class="fore">
+            <div class="day1">
+                <h2>Day 1 :</h2>
+                <h4>Temprature : <p id="fore12"></p></h4>
+                <h4> Wind Speed :<p id="fore13"></p></h4>
+            </div>
+            <div class="day2">
+                <h2>Day 2 :</h2>
+                <h4>Temprature : <p id="fore22"></p></h4>
+                <h4> Wind Speed :<p id="fore23"></p></h4>
+            </div>
+            <div class="day3">
+                <h2>Day 3 :</h2>
+                <h4>Temprature : <p id="fore32"></p></h4>
+                <h4> Wind Speed :<p id="fore33"></p></h4>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
